@@ -4,6 +4,9 @@ const dataUppercase = "AZERTYUIOPQSDFGHJKLMWXCVBN".split(''); // idem pour ttes 
 const dataNumbers = "0123456789".split(''); //idem pour ts les chiffres
 const dataSymbols = "!,?:/*-+.;$~#{'([-|`_^@])=}%µ£¤<>".split(''); //idem pour les symbols
 
+//pas nécessaire de récupérer l'id des checkbox dans une variable car ce sont des identifiants connus de javascript
+//cela fonctionne pour les checkbox et les button
+
 function generatePassword() { //fonction pr générer le mdp
     const data = [].concat( //on concatene les ternaires suivantes
         lowercase.checked ? dataLowercase : [], //si lowercase est check, renvoie dataLowercase, sinon renvoie un tableau vide
